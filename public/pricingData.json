@@ -1,0 +1,51 @@
+[
+    {
+        "id" : 1,
+        "plan": "Basic",
+        "price": 19,
+        "currency": "USD",
+        "description": "Perfect for beginners who want access to essential gym facilities.",
+        "features": [
+            "Access to gym floor & equipment",
+            "Free fitness assessment (1x)",
+            "Locker room access",
+            "Open gym hours only",
+            "Access to cardio machines",
+            "Standard changing rooms",
+            "Access to water station"
+        ]
+    },
+    {
+        "id" : 2,
+        "plan": "Standard",
+        "price": 39,
+        "currency": "USD",
+        "description": "Ideal for regular members looking for extra flexibility and classes.",
+        "features": [
+            "Everything in Basic Plan",
+            "2 guest passes per month",
+            "Free body composition analysis",
+            "Extended access hours",
+            "Discounts on fitness supplements",
+            "Access to strength training area",
+            "Free Wi-Fi inside gym"
+        ]
+    },
+    {
+        "id" : 3,
+        "plan": "Premium",
+        "price": 59,
+        "currency": "USD",
+        "description": "Designed for fitness enthusiasts who want personal guidance and perks.",
+        "features": [
+            "Everything in Standard Plan",
+            "2 personal training sessions/month",
+            "Priority class booking",
+            "Sauna & steam room access",
+            "Free gym merchandise (t-shirt/bottle)",
+            "Nutrition tips & progress tracking app",
+            "Access to exclusive workshops",
+            "Free parking pass"
+        ]
+    }
+]
