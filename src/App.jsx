@@ -4,8 +4,13 @@ import './App.css'
 import DaisyNav from './Components/DaisyNav/DaisyNav'
 import Navbar from './Components/Navbar/Navbar'
 import PricingOptions from './Components/PricingOptions/PricingOptions';
+import ResultsCharts from './Components/ResultChart/ResultsCharts';
+import TotalSales from './Components/TotalSales/TotalSales';
+import axios from 'axios';
 
 const pricingPromise = fetch('pricingData.json').then(res => res.json());
+
+const salePromise = axios('totalSales.json');
 
 function App() {
   
@@ -19,6 +24,11 @@ function App() {
         <Suspense fallback={<span className="loading loading-infinity loading-lg"></span>}>
           <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
         </Suspense>
+
+        <Suspense fallback={<span className="loading loading-infinity loading-lg"></span>}>
+          <TotalSales salePromise={salePromise}></TotalSales>
+        </Suspense>
+
       </main>
     </>
   )

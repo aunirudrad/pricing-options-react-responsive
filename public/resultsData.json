@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Rahim Ahmed",
+        "math": 95,
+        "science": 78,
+        "english": 62
+    },
+    {
+        "id": 2,
+        "name": "Mitu Sultana",
+        "math": 88,
+        "science": 91,
+        "english": 84
+    },
+    {
+        "id": 3,
+        "name": "Arif Hasan",
+        "math": 72,
+        "science": 55,
+        "english": 80
+    },
+    {
+        "id": 4,
+        "name": "Nusrat Jahan",
+        "math": 60,
+        "science": 96,
+        "english": 89
+    },
+    {
+        "id": 5,
+        "name": "Sabbir Hossain",
+        "math": 45,
+        "science": 68,
+        "english": 74
+    }
+]

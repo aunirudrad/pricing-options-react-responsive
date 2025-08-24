@@ -1,0 +1,38 @@
+[
+    {
+        "quarter": "Q1",
+        "period": "Jan - Mar",
+        "purchases": {
+            "Basic": 120,
+            "Standard": 85,
+            "Premium": 45
+        }
+    },
+    {
+        "quarter": "Q2",
+        "period": "Apr - Jun",
+        "purchases": {
+            "Basic": 150,
+            "Standard": 95,
+            "Premium": 60
+        }
+    },
+    {
+        "quarter": "Q3",
+        "period": "Jul - Sep",
+        "purchases": {
+            "Basic": 135,
+            "Standard": 110,
+            "Premium": 70
+        }
+    },
+    {
+        "quarter": "Q4",
+        "period": "Oct - Dec",
+        "purchases": {
+            "Basic": 160,
+            "Standard": 120,
+            "Premium": 90
+        }
+    }
+]
