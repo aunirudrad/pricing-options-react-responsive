@@ -1,5 +1,5 @@
 import React, { Suspense, use } from 'react';
-import { Bar, BarChart, Legend, Rectangle, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 
 
@@ -23,29 +23,29 @@ const TotalSales = ({ salePromise }) => {
 
     console.log(salesDataForChart);
     return (
-        <div className=''>
-            <Suspense fallback={<span className="loading loading-infinity loading-lg"></span>}>
-                <BarChart width={800} height={400} data={salesDataForChart} 
+
+        <div>
+            <BarChart className='max-w-[350px] md:max-w-screen overflow-hidden' width={700} height={500} data={salesDataForChart}
                 margin={{
                     top: 5,
-                    right: 20,
-                    left:20,
-                    bottom:5
-                    }}>
+                    right: 30,
+                    left: 20,
+                    bottom: 5
+                }}>
 
-                    <XAxis dataKey={'period'}></XAxis>
-                    <YAxis></YAxis>
+                <XAxis dataKey={'period'}></XAxis>
+                <YAxis></YAxis>
 
-                    <Tooltip></Tooltip>
-                    <Legend></Legend>
+                <Tooltip></Tooltip>
+                <Legend align='left'></Legend>
 
-                    <Bar dataKey={'basicPlan'} fill='green' activeBar={<Rectangle fill='pink' stroke='blue'></Rectangle>}></Bar>
-                    <Bar dataKey={'standardPlan'} fill='red' activeBar={<Rectangle fill='gold' stroke='blue'></Rectangle>}></Bar>
-                    <Bar dataKey={'premiumPlan'} fill='cyan' activeBar={<Rectangle fill='white' stroke='blue'></Rectangle>}></Bar>
+                <Bar dataKey={'basicPlan'} fill='green' activeBar={<Rectangle fill='pink' stroke='blue'></Rectangle>}></Bar>
+                <Bar dataKey={'standardPlan'} fill='red' activeBar={<Rectangle fill='gold' stroke='blue'></Rectangle>}></Bar>
+                <Bar dataKey={'premiumPlan'} fill='cyan' activeBar={<Rectangle fill='white' stroke='blue'></Rectangle>}></Bar>
 
-                </BarChart>
-            </Suspense>
+            </BarChart>
         </div>
+
     );
 };
 
